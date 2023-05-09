@@ -2,9 +2,8 @@ from telegram.ext import Updater, MessageHandler, Filters
 from utils import search_download_youtube_video
 from loguru import logger
 
-
 class Bot:
-
+כ
     def __init__(self, token):
         # create frontend object to the bot programmer
         self.updater = Updater(token, use_context=True)
@@ -48,8 +47,7 @@ class YoutubeBot(Bot):
 
 if __name__ == '__main__':
     with open('.telegramToken') as f:
-        token = f.read()
+        _token = f.read()
 
-    my_bot = Bot(token)
+    my_bot = Bot(_token)
     my_bot.start()
-
