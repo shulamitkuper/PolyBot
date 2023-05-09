@@ -48,8 +48,8 @@ class YoutubeBot(Bot):
 
 if __name__ == '__main__':
     with open('.telegramToken') as f:
-        _token = f.read()
+        token = f.read()
 
-    my_bot = Bot(_token)
+    my_bot = Bot(token)
     my_bot.start()
 
